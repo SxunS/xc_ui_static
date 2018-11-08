@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>vue单个文件测试</title>
+</head>
+<body>
+    <div id="app">
+        <span v-text="name"></span>
+    <label>
+        <input type="text" v-model="number1"> +
+        <input type="text" v-model="number2"> =
+        <span v-text="result"></span>
+        <button v-on:click="change">刷新</button>
+        <br/>
+        <ul>
+            <li v-for="(value) in list">{{value}}</li>
+            ===========================================
+            <li v-for="(value,key) in user">{{key}}-----{{value}}</li>
+            ===========================================
+            <li v-for="(item) in userList">{{item.user.userName}}-----{{item.user.age}}</li>
+        </ul>
+    </label>
+    </div>
+</body>
+</html>
